@@ -5,12 +5,7 @@
 	id="WebApp_ID" version="3.1">
 	<display-name>MyCapsWebApp</display-name>
 	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.htm</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.html</welcome-file>
-		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>date</welcome-file>
 	</welcome-file-list>
 
 	<servlet>
@@ -21,6 +16,22 @@
 		<servlet-name>RandomNumServ</servlet-name>
 		<url-pattern>/random</url-pattern>
 	</servlet-mapping>
-
-
+	
+	<servlet>
+		<servlet-name>DateServ</servlet-name>
+		<servlet-class>com.caps.MyFirstServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DateServ</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FBLogin</servlet-name>
+		<servlet-class>com.caps.FBLoginServ</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FBLogin</servlet-name>
+		<url-pattern>/fbLogin</url-pattern>
+	</servlet-mapping>
 </web-app>
