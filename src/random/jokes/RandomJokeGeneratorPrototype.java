@@ -57,7 +57,7 @@ public class RandomJokeGeneratorPrototype {
 //			System.out.println("Random num is: "+randomId);
 			
 			String getRandomNameSQL = "select name from person_info where "
-					+ " id=?";
+					+ " id=? and gender='M'";
 			
 			pstmt2 = con.prepareStatement(getRandomNameSQL);
 			pstmt2.setInt(1, randomId);

@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import random.jokes.RandomJokeGeneratorPrototype;
 
-@WebServlet("/joke")
+
 public class JokeServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

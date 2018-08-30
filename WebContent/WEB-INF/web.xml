@@ -44,4 +44,42 @@
     <servlet-name>FBLogin</servlet-name>
     <url-pattern>/fbLogin</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DateJsp</servlet-name>
+   	<jsp-file>/Date.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DateJsp</servlet-name>
+    <url-pattern>/dateJsp</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>Joke</servlet-name>
+   	<servlet-class>com.caps.JokeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Joke</servlet-name>
+    <url-pattern>/joke</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </web-app>

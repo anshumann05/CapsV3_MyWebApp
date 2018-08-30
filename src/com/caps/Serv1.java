@@ -13,18 +13,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class Serv1 extends HttpServlet{
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		Cat c = new Cat();
-		c.setName("Jinnie");
-		c.setGender("Female");
-		c.setColor("White");
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		req.setAttribute("cat", c);
+		String msg = req.getParameter("msg");
+		System.out.println(req.getRemoteAddr());
+		System.out.println(req.getRemoteHost());
+		System.out.println(req.getRemotePort());
 		
-		PrintWriter out = resp.getWriter();
-		out.println("Cat is been set inside req Object");
+		System.out.println(msg);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/serv2");
-		dispatcher.include(req, resp);
 	}
 }

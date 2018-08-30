@@ -10,14 +10,8 @@
 <title>Current Date</title>
 </head>
 <body>
-	<jsp:useBean id="cat1" class="com.caps.Cat" scope="request"/>
-	<jsp:setProperty property="name" name="cat1" value="Tom"/>
-	<jsp:setProperty property="color" name="cat1" value="Gray"/>
-	<jsp:setProperty property="gender" name="cat1" value="Male"/>
-	<jsp:getProperty property="name" name="cat1"/>
-	<%
-		int i = 10/0;
-	%>
+	
+	<h1>Something went wrong</h1>
 	
 </body>
 </html>

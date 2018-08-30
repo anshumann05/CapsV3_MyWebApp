@@ -60,6 +60,10 @@ public class ShowStudents extends HttpServlet{
 				 * 4. Process the results
 				 */
 
+				String username = (String)session.getAttribute("username");
+				out.println("<h3>Hi "+username+"</h3><br>");
+				
+				
 				while(rs.next()){
 					int regno = rs.getInt(1);
 					String firstname = rs.getString(2);
@@ -67,12 +71,12 @@ public class ShowStudents extends HttpServlet{
 					String isAdmin = rs.getString(4);
 					String passwd = rs.getString(5);
 
-					out.println(regno);
-					out.println(firstname);
-					out.println(lastname);
-					out.println(isAdmin);
-					out.println(passwd);
-					out.println("*********************");
+					out.println(regno+"<br>");
+					out.println(firstname+"<br>");
+					out.println(lastname+"<br>");
+					out.println(isAdmin+"<br>");
+					out.println(passwd+"<br>");
+					out.println("*********************<br>");
 				}
 
 			} catch (Exception e) {
